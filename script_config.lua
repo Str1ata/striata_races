@@ -771,8 +771,7 @@ table.insert(Config.scriptsConfig, {
             id = "[ID]",
             nickName = "[Apelido]",
 			date = "[Data]",
-			hour = "[Hora]",
-
+			hour = "[Hora]"
         }
     },
     
@@ -842,6 +841,24 @@ table.insert(Config.scriptsConfig, {
             changeToGlobal = "View global ranking",
             nextPage = "Next page",
             previousPage = "Previous page"
+        },
+
+        webhook = {
+            imgLink = "https://i.imgur.com/3cOtcgU.gif",
+            title = "Race started",
+            race = "Race",
+            illegal = "Illegal",
+            price = "Bet amount required to enter",
+            runners = "Runners",
+            finish = "Finished",
+            winner = "Winner",
+            prize = "Prize",
+            Yes = "Yes",
+            No = "No",
+            id = "[ID]",
+            nickName = "[Nickname]",
+            date = "[Date]",
+            hour = "[Time]"
         }
     }
 })
