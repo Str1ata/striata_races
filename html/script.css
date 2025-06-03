@@ -1,474 +1,1210 @@
-.runnersJoin {
-    width: 10%;
-    /* border-radius: 1.0vw; */
-    margin-bottom: 1vw;
-    overflow: hidden;
+#fivem #nuiRacesStart {
+    width: 100%;
+    height: 100%
+}
 
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
+#redm #nuiRacesStart {
+    width: 100%;
+    height: 100%
+}
 
-    position: fixed;
-    bottom: 0%;
+#nuiRacesStart #runnersJoin {
+    position: relative;
+}
+
+#nuiRacesStart #runnersJoin .runner {
+    position: relative;
+    padding: 0.25vw;
+}
+
+#nuiRacesStart #runnersJoin .runner .runnerRectangle {
+    display: flex;
+    width: 10vw;
+    height: 3.25vh;
+    position: relative;
+}
+
+#fivem #nuiRacesStart #runnersJoin .runner .runnerRectangle {
+    background: linear-gradient(270deg, rgba(12, 20, 26, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+    border-radius: 4vw;
+    border: 0.1vw #1FA5DE solid;
+}
+
+#redm #nuiRacesStart #runnersJoin .runner .runnerRectangle {
+    border-radius: 0.3vw;
+    background: rgba(21, 18, 17, 0.65);
+}
+
+#nuiRacesStart #runnersJoin .runner .runnerRectangle .nickName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0.5vw;
+    height: 100%;
+    width: 50%;
+
+    color: rgba(255, 255, 255, 0.60);
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    font-size: 1vw;
+    word-wrap: break-word;
+    text-shadow: 0vw 0vw 1.0vw rgba(255, 255, 255, 0.60)
+}
+
+#fivem #nuiRacesStart #runnersJoin .runner .runnerRectangle .nickName {
+    font-family: "Futuru";
+}
+
+#redm #nuiRacesStart #runnersJoin .runner .runnerRectangle .nickName {
+    font-family: "Give You Glory";
+}
+
+#nuiRacesStart #runnersJoin .runner .runnerRectangle .vehicleName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.5vw;
+    height: 100%;
+    width: 50%;
+}
+
+#fivem #nuiRacesStart #runnersJoin .runner .runnerRectangle .vehicleName {
+    color: white;
+    text-align: right;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Futuru";
+    font-size: 0.95vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    word-wrap: break-word;
+}
+
+#redm #nuiRacesStart #runnersJoin .runner .runnerRectangle .vehicleName {
+    color: white;
+    text-align: right;
+    font-family: "Krick";
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#nuiRacesStart .timeCount {
+    width: 5.999375%; /* 115.188px */
+    height: 10.665556%; /* 115.188px */
     left: 45%;
+    top: 87%;
+    position: absolute;
 }
 
-.timeCount{
-	background-image: linear-gradient(to bottom right, rgb(11, 39, 117), rgb(57, 184, 216) );
-    width: 1.2%;
-    height: 2.1%;
-
+#nuiRacesStart .timeCount .timeCountCircle {
+    width: 69.451679%; /* 80px */
+    height: 69.451679%; /* 80px */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(180deg, rgba(12, 20, 26, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%);
     border-radius: 50%;
-    border: 0.1vw solid white;
-    color: rgb(255,255,255);
-    text-shadow: 0.104vw 0 0 rgb(0,0,0), -0.104vw 0 0 rgb(0,0,0), 0 0.104vw 0 rgb(0,0,0), 0 -0.104vw 0 rgb(0,0,0), 0.052vw 0.052vw rgb(0,0,0), -0.052vw -0.052vw 0 rgb(0,0,0), 0.052vw -0.052vw 0 rgb(0,0,0), -0.052vw 0.052vw 0 rgb(0,0,0);
-
-	position: fixed;
-    bottom: var(--runners);
-	left: 49.5%;
 }
 
-.timeCount span {
+#nuiRacesStart .timeCount span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.25vw;
+
+    font-weight: 200;
+    text-shadow: 0vw 0vw 3vw rgba(255, 255, 255, 0.60);
+}
+
+#fivem #nuiRacesStart .timeCount span {
+    font-family: "Futuru";
+}
+
+#redm #nuiRacesStart .timeCount span {
+    font-family: "Krick";
+}
+
+#nuiRacesStart .timeCount .timeCountCircleOut {
+    width: 76.396847%; /* 88px */
+    height: 76.396847%; /* 88px */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 0.5vw rgba(12, 20, 26, 0.50) solid;
+}
+
+#nuiRacesStart .timeCount .timeCountCircleOutEffect {
+    top: -2.5%;
+    left: -2.5%;
+    width: 104.872035%; /* 120.8px/115.188 */
+    height: 104.872035%; /* 120.8px/115.188 */
+    position: absolute;
+}
+
+#nuiRacesStart .timeCount .timeCountCircleOutEffect svg:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#fivem #nuiRacesStart .timeCount .timeCountCircleOutEffect svg:nth-child(1) .start-color {
+    stop-color: #1FA5DE;
+}
+
+#fivem #nuiRacesStart .timeCount .timeCountCircleOutEffect svg:nth-child(1) .end-color {
+    stop-color: #2C67BF;
+}
+
+#redm #nuiRacesStart .timeCount .timeCountCircleOutEffect svg:nth-child(1) .start-color {
+    stop-color: #FFAD5B;
+}
+
+#redm #nuiRacesStart .timeCount .timeCountCircleOutEffect svg:nth-child(1) .end-color {
+    stop-color: #B55400;
+}
+
+#fivem #nuiRacesStart .timeCount .timeCountCircleOutEffect svg:nth-child(1) g {
+    filter: drop-shadow(0vw 0vw 0.25vw #2C67BF);
+}
+
+#redm #nuiRacesStart .timeCount .timeCountCircleOutEffect svg:nth-child(1) g {
+    filter: drop-shadow(0vw 0vw 0.25vw #B55400);
+}
+
+#redm #nuiRacesStart .timeCount .timeCountCircleOutEffect #timeIcon1 {
+    position: absolute;
+    top: 47.5%;
+    left: 2.5%;
+}
+
+#redm #nuiRacesStart .timeCount .timeCountCircleOutEffect #timeIcon2 {
+    position: absolute;
+    top: 47.5%;
+    left: 82.5%;
+}
+
+#redm #nuiRacesStart .timeCount .timeCountCircleOutEffect #timeIcon3 {
+    position: absolute;
+    top: 2.5%;
+    left: 45.0%;
+}
+
+#redm #nuiRacesStart .timeCount .timeCountCircleOutEffect #timeIcon4 {
+    position: absolute;
+    top: 82.5%;
+    left: 45.0%;
+}
+
+#redm #nuiRacesStart .timeCount .timeCountCircleOutEffect #timeIcon5 {
+    position: absolute;
+    top: 2.5%;
+    left: 97.5%;
+
+    transform: translate(-180%, 180%);
+}
+
+#redm #nuiRacesStart .timeCount .timeCountCircleOutEffect #timeIcon6 {
+    position: absolute;
+    top: 97.5%;
+    left: 2.5%;
+
+    transform: translate(190%, -190%);
+}
+
+#redm #nuiRacesStart .timeCount .timeCountCircleOutEffect #timeIcon7 {
+    position: absolute;
+    top: 97.5%;
+    left: 97.5%;
+
+    transform: translate(-225%, -225%);
+}
+
+#redm #nuiRacesStart .timeCount .timeCountCircleOutEffect #timeIcon8 {
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+
+    transform: translate(135%, 135%);
+}
+
+#nuiRacesStatus {
+    width: 100%;
+    height: 100%;
+}
+
+#nuiRacesStatus .raceStatusContainer .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+
+    width: 10.5%;
+    height: 20%;
+
+    left: 2%;
+    top: 41%;
+
+    position: absolute;
+}
+
+#nuiRacesStatus .raceStatusContainer .infos .externalStatusRectangle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#fivem #nuiRacesStatus .raceStatusContainer .infos .externalStatusRectangle {
+    background: linear-gradient(270deg, rgba(12, 20, 26, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+    border-radius: 5vw;
+    border: 0.1vw #1FA5DE solid;
+}
+
+#redm #nuiRacesStatus .raceStatusContainer .infos .externalStatusRectangle {
+    border-radius: 0.3vw;
+    background: rgba(21, 18, 17, 0.65);
+}
+
+#nuiRacesStatus .raceStatusContainer .infos .InternalStatusRectangle {
+    width: 50%;
+    height: 80%;
+    left: 2.5%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fivem #nuiRacesStatus .raceStatusContainer .infos .InternalStatusRectangle {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 5vw;
+}
+
+#redm #nuiRacesStatus .raceStatusContainer .infos .InternalStatusRectangle {
+    border-radius: 0.3vw 5vw 5vw 0.3vw;
+    background: rgba(255, 221, 147, 0.05);
+}
+
+#nuiRacesStatus .raceStatusContainer .infos .InternalStatusContainer {
+    width: 50%;
     height: 100%;
-    width: 100%;  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nuiRacesStatus .raceStatusContainer .infos .infoTitle {
+    position: relative;
+}
+
+#fivem #nuiRacesStatus .raceStatusContainer .infos .infoTitle {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Futuru";
+    font-size: 0.65vw;
+    font-style: normal;
+    font-weight: 200;
     line-height: normal;
-    font-family: 'Arial', cursive;
-    font-weight: bold;
-    font-size: 0.7vw;
 }
 
-.runner {
-	background: rgba( 255, 255, 255, 0.25 );
-	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-    border-top: 0.1vw solid rgba(255,255,255,0.3);
-    border-bottom: 0.1vw rgba(255,255,255,0.3);
-    color: rgb(255,255,255);
-  	font-family: 'Arial', cursive;
-    font-weight: bold;
-    font-size: 0.7vw;
-    text-shadow: 0.104vw 0 0 rgb(0,0,0), -0.104vw 0 0 rgb(0,0,0), 0 0.104vw 0 rgb(0,0,0), 0 -0.104vw 0 rgb(0,0,0), 0.052vw 0.052vw rgb(0,0,0), -0.052vw -0.052vw 0 rgb(0,0,0), 0.052vw -0.052vw 0 rgb(0,0,0), -0.052vw 0.052vw 0 rgb(0,0,0);
-	list-style: none;
-	user-select: none;
-	white-space: nowrap;
-}
-
-.startPosition {
-  width: 15%;
-  position: fixed;
-  left: 85%;
-  text-align: center;
-  color: rgb(255,255,255);
-  background-image: linear-gradient(to bottom right, rgb(11, 39, 117), rgb(57, 184, 216) );
-}
-
-.raceStatusContainer {
-    font-family: 'Arial', cursive;
-    color: rgb(255,255,255);
-    text-shadow: 0.104vw 0 0 rgb(0,0,0), -0.104vw 0 0 rgb(0,0,0), 0 0.104vw 0 rgb(0,0,0), 0 -0.104vw 0 rgb(0,0,0), 0.052vw 0.052vw rgb(0,0,0), -0.052vw -0.052vw 0 rgb(0,0,0), 0.052vw -0.052vw 0 rgb(0,0,0), -0.052vw 0.052vw 0 rgb(0,0,0);
-    font-size: 0.7vw;
-}
-
-.primaryFont {
-    font-size: 0.7vw;
-	font-weight: normal;
-}
-
-.runnersFont {
-    font-size: 0.7vw;
-	font-weight: normal;
-	list-style: none;
-	user-select: none;
-	white-space: nowrap;
-}
-
-.checkPoints .primaryFont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 95%;  
-}
-
-.laps .primaryFont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 95%;  
-}
-
-.raceTime .primaryFont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 95%;  
-}
-
-.raceTimeLeft .primaryFont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 95%;  
-}
-
-.laps {
-    width: 10%;
-    height: 2.0%;
-  
-    position: fixed;
-    bottom: 50%;
-    left: 2.5%;
-  
-    background: rgba( 255, 255, 255, 0.35 );
-	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-}
-
-.raceTime {
-    width: 10%;
-    height: 2.0%;
-  
-    position: fixed;
-    bottom: 47.5%;
-    left: 2.5%;
-  
-    background: rgba( 255, 255, 255, 0.35 );
-	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-}
-
-.raceTimeLeft {
-    width: 10%;
-    height: 2.0%;
-  
-    position: fixed;
-    bottom: 45%;
-    left: 2.5%;
-  
-    background: rgba( 255, 255, 255, 0.35 );
-	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-}
-
-.checkPoints {
-    width: 10%;
-    height: 2.0%;
-  
-    position: fixed;
-    bottom: 42.5%;
-    left: 2.5%;
-  
-    background: rgba( 255, 255, 255, 0.35 );
-	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-}
-
-.runners {
-    width: 15%;
-  
-    position: fixed;
-    bottom: 50%;
-    left: 84.5%;
-  
-    background: rgba( 255, 255, 255, 0.35 );
-	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-}
-
-.runners .runner-status span{
-    width: 2.5%;
-    background: rgba( 255, 255, 255, 0.5 );
-}
-
-#runnerI {
-    background-image: linear-gradient(to bottom right, rgb(11, 39, 117), rgb(57, 184, 216) );
-}
-
-.runnerPosition {
-    width: 15%;
-    position: fixed;
-    left: 97%;
+#redm #nuiRacesStatus .raceStatusContainer .infos .infoTitle {
+    color: #FFF;
     text-align: center;
-    color: rgb(255,255,255);
-    background-image: linear-gradient(to bottom right, rgb(11, 39, 117), rgb(57, 184, 216) );
-}
-
-.raceStatusContainer span #text {
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-    position: left;
-    justify-content: left;
-    align-items: left;
-
-    line-height: normal;
-    font-family: 'Arial', cursive;
-    font-weight: bold;
-    user-select: none;
-	white-space: nowrap;
-
-    /* background-color: red; */
-}
-
-.raceStatusContainer span #content {
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-    position: right;
-    justify-content: right;
-    align-items: right;
-
-    line-height: normal;
-    font-family: 'Arial', cursive;
-    font-weight: bold;
-    user-select: none;
-	white-space: nowrap;
-
-    /* background-color: green; */
-}
-
-.raceRankContainer #mode1 #raceRequestAccept{
-	font-family: 'Arial', cursive;
-    color: rgb(0,255,0);
-    text-shadow: 0.104vw 0 0 rgb(0,0,0), -0.104vw 0 0 rgb(0,0,0), 0 0.104vw 0 rgb(0,0,0), 0 -0.104vw 0 rgb(0,0,0), 0.052vw 0.052vw rgb(0,0,0), -0.052vw -0.052vw 0 rgb(0,0,0), 0.052vw -0.052vw 0 rgb(0,0,0), -0.052vw 0.052vw 0 rgb(0,0,0);
-    font-size: 0.7vw;
-}
-
-.raceRankContainer #mode1 #raceRequestRefuse{
-    font-family: 'Arial', cursive;
-    color: rgb(255, 0, 0);
-    text-shadow: 0.104vw 0 0 rgb(0,0,0), -0.104vw 0 0 rgb(0,0,0), 0 0.104vw 0 rgb(0,0,0), 0 -0.104vw 0 rgb(0,0,0), 0.052vw 0.052vw rgb(0,0,0), -0.052vw -0.052vw 0 rgb(0,0,0), 0.052vw -0.052vw 0 rgb(0,0,0), -0.052vw 0.052vw 0 rgb(0,0,0);
-    font-size: 0.7vw;
-}
-
-.raceRankContainer {
-	width: 15%;
-    position: fixed;
-    bottom: 50%;
-    left: 2.5%;
-
-	background: rgba( 255, 255, 255, 0.35 );
-	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-
-	color: rgb(255, 255, 255);
-	font-family: 'Arial', cursive;
-	text-shadow: 0.104vw 0 0 rgb(0,0,0), -0.104vw 0 0 rgb(0,0,0), 0 0.104vw 0 rgb(0,0,0), 0 -0.104vw 0 rgb(0,0,0), 0.052vw 0.052vw rgb(0,0,0), -0.052vw -0.052vw 0 rgb(0,0,0), 0.052vw -0.052vw 0 rgb(0,0,0), -0.052vw 0.052vw 0 rgb(0,0,0);
-    font-size: 0.7vw;
-}
-
-.raceRankContainer2 {
-	width: 80%;
-	height: 80%;
-    position: fixed;
-    bottom: 10%;
-    left: 10%;
-
-	background: rgba( 255, 255, 255, 0.35 );
-	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-
-	color: rgb(255, 255, 255);
-	font-family: 'Arial', cursive;
-	text-shadow: 0.104vw 0 0 rgb(0,0,0), -0.104vw 0 0 rgb(0,0,0), 0 0.104vw 0 rgb(0,0,0), 0 -0.104vw 0 rgb(0,0,0), 0.052vw 0.052vw rgb(0,0,0), -0.052vw -0.052vw 0 rgb(0,0,0), 0.052vw -0.052vw 0 rgb(0,0,0), -0.052vw 0.052vw 0 rgb(0,0,0);
-    font-size: 0.7vw;
-}
-
-.positions {
-  display: flex;
-  width: 2.5%;
-  height: 5%;
-}
-
-.status {
-  display: flex;
-  width: 2.5%;
-  height: 5%;
-}
-
-.topMensage {
-  position: absolute;
-  background-image: linear-gradient(to bottom right, rgb(11, 39, 117), rgb(57, 184, 216) );
-  width: 95%;
-  height: 5%;
-  left: 5%;
-  display: flex;
-}
-
-.topMensage #name, .topMensage #vehicle, .topMensage #class, .topMensage #time {
-    flex-basis: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.runnersRank {
-	height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-	border: solid rgb(88, 88, 88);
-	border-width: 0.1vw 0.0vw 0.1vw 0.0vw;
-}
-
-.bottomMensage {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0%;
-	top: 5%;
-  	display: flex;
-	flex-direction: column;
-}
-
-.runnersRank {
-	width: 100%;
-	height: 5%;
-}
-
-.bottomMensage #position {
-    flex-basis: 1.8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-	border: solid rgb(88, 88, 88);
-	border-width: 0.0vw 0.1vw 0.0vw 0.1vw;
-}
-.bottomMensage #status {
-    flex-basis: 3.3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.bottomMensage #name, .bottomMensage #vehicle, .bottomMensage #class, .bottomMensage #time {
-	background-color: white;
-    flex-basis: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.topMensage {
-  position: absolute;
-  background-image: linear-gradient(to bottom right, rgb(11, 39, 117), rgb(57, 184, 216) );
-  width: 95%;
-  height: 5%;
-  left: 5%;
-  display: flex;
-}
-
-.topMensage #name, .topMensage #vehicle, .topMensage #class, .topMensage #time {
-    flex-basis: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.runnersRank {
-	width: 100%;
-	height: 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-	border: solid rgb(88, 88, 88);
-	border-width: 0.1vw 0.0vw 0.1vw 0.0vw;
-}
-
-.runnersRank b{
-	width: 100%;
-	height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-	border: solid rgb(20, 22, 85);
-	border-width: 0.1vw 0.0vw 0.1vw 0.0vw;
-
-	color: rgb(255, 255, 255);
-	font-family: 'Arial', cursive;
-	text-shadow: 0.104vw 0 0 rgb(20, 22, 85), -0.104vw 0 0 rgb(20, 22, 85), 0 0.104vw 0 rgb(20, 22, 85), 0 -0.104vw 0 rgb(20, 22, 85), 0.052vw 0.052vw rgb(20, 22, 85), -0.052vw -0.052vw 0 rgb(20, 22, 85), 0.052vw -0.052vw 0 rgb(20, 22, 85), -0.052vw 0.052vw 0 rgb(2, 4, 37);
+    font-family: "Krick";
     font-size: 0.85vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.runnersRank img{
-	width: 80%;
-	height: 80%;
+#nuiRacesStatus .raceStatusContainer .infos .infoContent {
+    position: relative;
 }
 
-.bottomMensage {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0%;
-	top: 5%;
-  	display: flex;
-	flex-direction: column;
+#fivem #nuiRacesStatus .raceStatusContainer .infos .infoContent {
+    position: relative;
+    color: white;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Futuru";
+    font-size: 0.68vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.bottomMensage #position {
-    flex-basis: 1.8%;
+#redm #nuiRacesStatus .raceStatusContainer .infos .infoContent {
+    position: relative;
+    color: white;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Give You Glory";
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#nuiRacesStatus .raceStatusContainer .infos .laps {
+    width: 100%;
+    height: 20%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+#nuiRacesStatus .raceStatusContainer .infos .raceTime {
+    width: 100%;
+    height: 20%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+#nuiRacesStatus .raceStatusContainer .infos .raceTimeLeft {
+    width: 100%;
+    height: 20%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+#nuiRacesStatus .raceStatusContainer .infos .checkPoints {
+    width: 100%;
+    height: 20%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+
+#nuiRacesStatus .raceStatusContainer .runners {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10%;
+
+    width: 10.5%;
+    height: 20%;
+
+    left: 87%;
+    top: 41%;
+
+    position: absolute;
+}
+
+#nuiRacesStatus .raceStatusContainer .runners .runner {
+    width: 100%;
+    height: 20%;
+    position: relative;
+
+    /* display: flex; */
+    align-items: center;
+}
+
+#nuiRacesStatus .raceStatusContainer .runners .runner:nth-child(1) {
+    width: 100%;
+    height: 45%;
+}
+
+#nuiRacesStatus .raceStatusContainer .runners .runner:nth-child(2) {
+    width: 90%;
+    height: 40%;
+}
+
+#nuiRacesStatus .raceStatusContainer .runners .runner:nth-child(3) {
+    width: 80%;
+    height: 35%;
+}
+
+#nuiRacesStatus .raceStatusContainer .runners .runner:nth-child(4) {
+    width: 70%;
+    height: 30%;
+}
+
+#nuiRacesStatus .raceStatusContainer .runners .externalStatusRectangle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-	border: solid rgb(88, 88, 88);
-	border-width: 0.0vw 0.1vw 0.0vw 0.1vw;
 }
-.bottomMensage #status {
-    flex-basis: 3.3%;
+
+#fivem #nuiRacesStatus .raceStatusContainer .runners .externalStatusRectangle {
+    background: linear-gradient(270deg, rgba(12, 20, 26, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+    border-radius: 5vw;
+    font-family: "Futuru";
+    border: 0.1vw #1FA5DE solid;
+}
+
+#redm #nuiRacesStatus .raceStatusContainer .runners .externalStatusRectangle {
+    background: rgba(21, 18, 17, 0.65);  
+    border-radius: 0.3vw;
+    font-family: "Give You Glory";
+}
+
+#fivem #nuiRacesStatus .raceStatusContainer .runners #runnerI .externalStatusRectangle {
+    background: linear-gradient(270deg, #1fa5de73 0%, #2e367ab0 100%);
+}
+
+#redm #nuiRacesStatus .raceStatusContainer .runners #runnerI .externalStatusRectangle {
+    background: linear-gradient(270deg, #FFAD5B73 0%, #B55400b0 100%);
+}
+
+#nuiRacesStatus .raceStatusContainer .runners .externalStatusRectangle .InternalStatusContainer {
+    position: relative;
+    width: 75%;
+    height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
 }
 
-.bottomMensage #name, .bottomMensage #vehicle, .bottomMensage #class, .bottomMensage #time {
-	background-color: white;
-    flex-basis: 25%;
+#fivem #nuiRacesStatus .raceStatusContainer .runners .externalStatusRectangle .InternalStatusContainer {
+    color: white;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    text-shadow: 0vw 0vw 4vw rgba(255, 255, 255, 0.60);
+    font-family: "Futuru";
+    font-size: 0.8vw;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+#redm #nuiRacesStatus .raceStatusContainer .runners .externalStatusRectangle .InternalStatusContainer {
+    color: white;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Give You Glory";
+    font-size: 0.8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#nuiRacesStatus .raceStatusContainer .runners .runner:nth-child(4) .InternalStatusContainer {
+    width: 100%;
+    height: 100%;
+}
+
+#nuiRacesStatus .raceStatusContainer .runners .externalStatusRectangle .InternalStatusRectangle {
+    position: relative;
+    width: 25%;
+    height: 80%;
+    left: -2.5%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+}
+
+#fivem #nuiRacesStatus .raceStatusContainer .runners .externalStatusRectangle .InternalStatusRectangle {
+    border-radius: 5vw;
+    /* border: 0.1vw #1FA5DE solid; */
+
+    color: white;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    text-shadow: 0vw 0vw 4vw rgba(255, 255, 255, 0.60);
+    font-family: "Futuru";
+    font-size: 0.68vw;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+#redm #nuiRacesStatus .raceStatusContainer .runners .externalStatusRectangle .InternalStatusRectangle {
+    border-radius: 0.3vw;
+
+    color: white;
+    text-align: center;
+    font-family: "Krick";
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#fivem #nuiRacesStatus .raceStatusContainer .runners .externalStatusRectangle .InternalStatusRectangle {
+    border-radius: 5vw;
+}
+
+#redm #nuiRacesStatus .raceStatusContainer .runners .externalStatusRectangle .InternalStatusRectangle {
+    border-radius: 5vw 0vw 0vw 5vw;
+}
+
+#nuiRacesStatus .raceStatusContainer .runners .runner:nth-child(1) .externalStatusRectangle .InternalStatusRectangle {
+    background: linear-gradient(270deg, #D6A94A 0%, #C0A47B 100%);
+    box-shadow: 0vw 0vw 0.25vw 0vw rgba(255, 188.06, 140.25, 0.50);
+}
+
+#nuiRacesStatus .raceStatusContainer .runners .runner:nth-child(2) .externalStatusRectangle .InternalStatusRectangle {
+    background: linear-gradient(270deg, #A1A1A1 0%, #707070 100%);
+    box-shadow: 0vw 0vw 0.25vw 0vw rgba(255, 255, 255, 0.50);
+}
+
+#nuiRacesStatus .raceStatusContainer .runners .runner:nth-child(3) .externalStatusRectangle .InternalStatusRectangle {
+    background: linear-gradient(270deg, #AA743E 0%, #8D4631 100%);
+    box-shadow: 0vw 0vw 0.25vw 0vw rgba(222, 104, 31, 0.50);
+}
+
+#mode1 .raceRankContainer {
+    position: absolute;
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+
+    text-align: center;
+    color: white;
+    font-size: 0.68vw;
+    font-weight: 300;
+    line-height: 0.70vw;
+    word-wrap: break-word;
+}
+
+#fivem #mode1 .raceRankContainer {
+    width: 10%;
+    height: 15.5%;
+
+    left: 50%;
+    top: 6%;
+    transform: translate(-50%, -6%);
+
+    background: linear-gradient(270deg, rgba(12, 20, 26, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+    border-radius: 1vw;
+    border: 0.1vw #1FA5DE solid;
+
+    font-family: "Futuru";
+}
+
+#redm #mode1 .raceRankContainer {
+    width: 15.4%;
+    height: 29.7%;
+
+    left: 50%;
+    top: 2%;
+    transform: translate(-50%, -2%);
+    
+    background-image: url("../resources/striata_races/html/docs/paper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mode1 .raceRankContainer .requestRankTime {
+    position: relative;
+    transform: translate(0%, 50%);
+    width: 80%;
+    height: 20%;
+    text-align: center;
+}
+
+#fivem #mode1 .raceRankContainer .requestRankTime {
+    color: white;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Futuru";
+    font-size: 0.70vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#redm #mode1 .raceRankContainer .requestRankTime {
+    color: #151211;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Krick";
+    font-size: 1.4vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    top: 15%;
+}
+
+#redm #mode1 .raceRankContainer .requestRankTime span span{
+    text-transform: lowercase;
+}
+
+#mode1 .raceRankContainer .requestRankAccept {
+    position: relative;
+    width: 80%;
+    height: 30%;
+    text-align: center;
+}
+
+#mode1 .raceRankContainer .requestRankAccept .raceRequestAcceptRectangle {
     width: 100%;
+    height: 100%;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.racesRankInteraction {
-	display: flex;
-	justify-content: space-around;
-	margin-top: 52.7%;
+#fivem #mode1 .raceRankContainer .requestRankAccept .raceRequestAcceptRectangle {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 1vw;
 }
 
-.racesRankInteraction button {
-	background-image: linear-gradient(to bottom right, rgb(11, 39, 117), rgb(57, 184, 216));
-	border: solid rgb(88, 88, 88);
-	border-radius: 1.7vw;
-	border-width: 0.13vw;
-	padding: 0.521% 1.042%;
+#redm #mode1 .raceRankContainer .requestRankAccept .raceRequestAcceptRectangle {
+    color: #151211;
+    font-family: "Gloria Hallelujah";
+    font-size: 0.8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.04%;
+    text-align: left;
 
-	cursor: pointer;
-
-	color: rgb(255, 255, 255);
-	font-family: 'Arial', cursive;
-	text-shadow: 0.104vw 0 0 rgb(0,0,0), -0.104vw 0 0 rgb(0,0,0), 0 0.104vw 0 rgb(0,0,0), 0 -0.104vw 0 rgb(0,0,0), 0.052vw 0.052vw rgb(0,0,0), -0.052vw -0.052vw 0 rgb(0,0,0), 0.052vw -0.052vw 0 rgb(0,0,0), -0.052vw 0.052vw 0 rgb(0,0,0);
-    font-size: 0.7vw;
-
-	transition: background-color 0.3s;
+    top: 25%;
 }
 
-.racesRankInteraction button:hover {
-	background-color: rgb(57, 184, 216);
+#fivem #mode1 .raceRankContainer .requestRankAccept span {
+    color: #3EC5FF;
+}
+
+#mode1 .raceRankContainer .requestRankRefuse {
+    position: relative;
+    transform: translate(0%, 5%);
+    width: 80%;
+    height: 30%;
+    text-align: center
+}
+
+#mode1 .raceRankContainer .requestRankRefuse .raceRequestRefuseRectangle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fivem #mode1 .raceRankContainer .requestRankRefuse .raceRequestRefuseRectangle {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 1vw;
+}
+
+#redm #mode1 .raceRankContainer .requestRankRefuse .raceRequestRefuseRectangle {
+    color: #151211;
+    font-family: "Gloria Hallelujah";
+    font-size: 0.8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.04%;
+    text-align: right;
+
+    top: -30%;
+}
+
+#fivem #mode1 .raceRankContainer .requestRankRefuse span {
+    color: #ED0043;
+}
+
+#mode2 {
+    width: 40.57%;
+    height: 60.28%;
+    left: 29.74%;
+    top: 19.815%;
+    position: absolute;
+}
+
+#fivem #mode2 .raceRankContainer2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(270deg, rgba(12, 20, 26, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), rgba(0, 0, 0, 0.30);
+    border-radius: 1vw;
+}
+
+#redm #mode2 .raceRankContainer2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#redm #mode2 .raceRankImage {
+    width: 150%;
+    height: 150%;
+    position: absolute;
+
+    background-image: url("../resources/striata_races/html/docs/rankingpaper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: translate(-18.0%, -15%);
+    /* filter: contrast(200%); */
+}
+
+#mode2 .raceRankContainer2 #closeRank {
+    width: 4.364%;
+    height: 5.069%;
+    left: 90.885%;
+    top: 90.168%;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    
+}
+
+#mode2 .raceRankContainer2 #closeRank svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#fivem #mode2 .raceRankContainer2 #closeRank svg .start-color {
+    stop-color: #ED0043;
+}
+
+#fivem #mode2 .raceRankContainer2 #closeRank svg:hover .start-color {
+    stop-color: white;
+}
+
+#fivem #mode2 .raceRankContainer2 #closeRank svg .end-color {
+    stop-color: #99002B;
+}
+
+#fivem #mode2 .raceRankContainer2 #closeRank svg:hover .end-color {
+    stop-color: white;
+}
+
+#fivem #mode2 .raceRankContainer2 #closeRank svg .fill-color {
+    fill: white;
+}
+
+#fivem #mode2 .raceRankContainer2 #closeRank svg:hover .fill-color {
+    fill: #ED0043;
+}
+
+#redm #mode2 .raceRankContainer2 #closeRank svg .start-color {
+    stop-color: #ED1C00;
+}
+
+#redm #mode2 .raceRankContainer2 #closeRank svg:hover .start-color {
+    stop-color: #bebebe;
+}
+
+#redm #mode2 .raceRankContainer2 #closeRank svg .end-color {
+    stop-color: #931707;
+}
+
+#redm #mode2 .raceRankContainer2 #closeRank svg:hover .end-color {
+    stop-color: white;
+}
+
+#redm #mode2 .raceRankContainer2 #closeRank svg .fill-color {
+    fill: white;
+}
+
+#redm #mode2 .raceRankContainer2 #closeRank svg:hover .fill-color {
+    fill: #ED1C00;
+}
+
+#mode2 .raceRankContainer2 .racesRankInteraction {
+    width: 8.886%;
+    height: 3.84%;
+    left: 78.69%;
+    top: 90.78%;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+#fivem #mode2 .raceRankContainer2 .racesRankInteraction {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1vw;
+}
+
+#mode2 .raceRankContainer2 .racesRankInteraction #goToPreviousPage {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    width: 28.169%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+
+#mode2 .raceRankContainer2 .racesRankInteraction .goToPreviousPage svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    flex-shrink: 0;
+}
+
+#mode2 .raceRankContainer2 .racesRankInteraction .pageInformation {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7578vw;
+    font-family: "Futuru";
+    font-weight: 300;
+    word-wrap: break-word;
+    top: -10%;
+}
+
+#fivem #mode2 .raceRankContainer2 .racesRankInteraction .pageInformation {
+    color: #ADD1FF;  
+}
+
+#mode2 .raceRankContainer2 .racesRankInteraction .pageInformation {
+    color: black;
+}
+
+#mode2 .raceRankContainer2 .racesRankInteraction #goToNextPage {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 28.169%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#mode2 .raceRankContainer2 .racesRankInteraction #goToNextPage svg {
+    width: 100%;
+    height: 100%;
+    transform-origin: top left;
+    flex-shrink: 0;
+}
+
+#mode2 .raceRankContainer2 .racesRankInteraction2 {
+    position: absolute;
+    width: 25.16%;
+    height: 5.07%;
+    left: 4.75%;
+    top: 90.17%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fivem #mode2 .raceRankContainer2 .racesRankInteraction2 {
+    border-radius: 1vw;
+    border: 0.1vw solid white;
+}
+
+#mode2 .raceRankContainer2 .racesRankInteraction2 #alternateGlobal {
+    width: 100%;
+    height: 100%;
+    border: none;
+
+    z-index: 1;
+}
+
+#fivem #mode2 .raceRankContainer2 .racesRankInteraction2 #alternateGlobal {
+    border-radius: 1vw;
+    background-color: rgba(0, 0, 0, 0);
+
+    color: white;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Futuru";
+    font-size: 0.7578vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#fivem #mode2 .raceRankContainer2 .racesRankInteraction2:hover {
+    border: 0.1vw solid black;
+}
+
+#fivem #mode2 .raceRankContainer2 .racesRankInteraction2 #alternateGlobal:hover {
+    background-color: white;
+
+    color: #2C67BF;
+}
+
+#redm #mode2 .raceRankContainer2 .racesRankInteraction2 #alternateGlobal {
+    border-radius: 0.1vw;
+    background: linear-gradient(90deg, #7C4721 0%, #9F6338 77.5%, #E17B32 100%);
+    
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Gloria Hallelujah";
+    font-size: 0.7578vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#redm #mode2 .raceRankContainer2 .racesRankInteraction2 #alternateGlobal:hover {
+    background: linear-gradient(90deg, #ffffff 0%, #e9e9e9 77.5%, #bebebe 100%);
+
+    color: #341400;
+}
+
+#mode2 .raceRankContainer2 .topMensage {
+    position: relative;
+    width: 83.31%;
+    height: 6.3%;
+    top: 5.07%;
+    left: 5.0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16.88%;
+}
+
+#redm #mode2 .raceRankContainer2 .topMensage #name span {
+    position: absolute;
+    top: -40%;
+    left: 0%
+}
+
+#fivem #mode2 .raceRankContainer2 .topMensage {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 1vw;
+
+    color: white;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Futuru";
+    font-size: 0.7578vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#redm #mode2 .raceRankContainer2 .topMensage {
+    color: #341400;
+    text-align: center;
+    font-family: "Give You Glory";
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+}
+
+#mode2 .raceRankContainer2 .bottomMensage {
+    position: relative;
+    width: 100%;
+    height: 74%;
+    top: 7.7%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2.57%;
+
+    color: white;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Futuru";
+    font-size: 0.7578vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#fivem #mode2 .raceRankContainer2 .bottomMensage {
+    color: white;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Futuru";
+    font-size: 0.7578vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#redm #mode2 .raceRankContainer2 .bottomMensage {
+    color: #0F0D0B;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Gloria Hallelujah";
+    font-size: 0.7578vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+#mode2 .raceRankContainer2 .bottomMensage .runnersRank {
+    width: 83.31%;
+    height: 8.51%;
+    position: relative;
+    left: 5.0%;
+}
+
+#fivem #mode2 .raceRankContainer2 .bottomMensage .runnersRank {
+    background: linear-gradient(270deg, rgba(12, 20, 26, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+    outline: 0.1vw #1FA5DE solid;
+    border-radius: 1vw;
+
+    color: white;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Futuru";
+    font-size: 0.7578vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#redm #mode2 .raceRankContainer2 .bottomMensage .runnersRank {
+    color: black;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Gloria Hallelujah";
+    font-size: 0.7578vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+#mode2 .raceRankContainer2 .bottomMensage .runnersRank b{
+    font-size: 0.9vw;
+}
+
+#mode2 .raceRankContainer2 .bottomMensage .runnersRank .runnersRankPositions {
+    position: absolute;
+    width: 8.5%;
+    height: 100%;
+    left: -8.5%;
+    transform: translate(-17%, 0%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#redm #mode2 .raceRankContainer2 .bottomMensage .runnersRank .runnersRankPositions {
+    color: white;
+}
+
+#fivem #mode2 .raceRankContainer2 .bottomMensage .runnersRank .runnersRankPositions {
+    border-radius: 1vw;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#redm #mode2 .raceRankContainer2 .bottomMensage .runnersRank .runnersRankPositions {
+    border-radius: 5vw 0vw 0vw 5vw;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#mode2 .raceRankContainer2 .bottomMensage #runnersFirstPageRank:nth-child(1) .runnersRankPositions {
+    background: linear-gradient(270deg, #D6A94A 0%, #C0A47B 100%);
+    box-shadow: 0vw 0vw 0.25vw 0vw rgba(255, 188.06, 140.25, 0.50);
+}
+
+#mode2 .raceRankContainer2 .bottomMensage #runnersFirstPageRank:nth-child(2) .runnersRankPositions {
+    background: linear-gradient(270deg, #A1A1A1 0%, #707070 100%);
+    box-shadow: 0vw 0vw 0.25vw 0vw rgba(255, 255, 255, 0.50);
+}
+
+#mode2 .raceRankContainer2 .bottomMensage #runnersFirstPageRank:nth-child(3) .runnersRankPositions {
+    background: linear-gradient(270deg, #AA743E 0%, #8D4631 100%);
+    box-shadow: 0vw 0vw 0.25vw 0vw rgba(222, 104, 31, 0.50);
+}
+
+#mode2 .raceRankContainer2 .bottomMensage .runnersRank .runnersRankImage img {
+    display: block;
+    
+    position: absolute;
+    width: 7%;
+    height: 90%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#fivem #mode2 .raceRankContainer2 .bottomMensage .runnersRank .runnersRankImage img {
+    left: 92.5%;
+    top: 5%;
+}
+
+#redm #mode2 .raceRankContainer2 .bottomMensage .runnersRank .runnersRankImage img {
+    left: 105%;
+    top: 5%;
+}
+
+#mode2 .raceRankContainer2 .bottomMensage .runnersRank .runnersRankInfos {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16.88%;
 }

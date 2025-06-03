@@ -17,7 +17,7 @@
         "blockPermissions": [
             "policia.permissao"
         ],
-        "webhookLink": "https://discord.com/api/webhooks/836348496981655635/_NGqo7ilNgX1j0cFTOQ6xmWgiN3FyGrh8RYqqOuAdAI87hntc3vHfulhhFGZRiUmngMB",
+        "webhookLink": "",
         "tunningUpClass": true,
         "vehiclesType": {
             "fivem": [
@@ -1399,7 +1399,7 @@
                     ],
                     "timeToStart": 40,
                     "laps": 1,
-                    "time": 140,
+                    "time": 170,
                     "policeBonus": {
                         "min": 200,
                         "max": 300
@@ -5049,11 +5049,11 @@
             "laps": "Voltas",
             "time": "Tempo",
             "openSummary": "para abrir o resumo da corrida!",
-            "closeMessage": "para fechar esta mensagem!",
+            "closeMessage": "para fechar essa mensagem!",
             "changeToSummary": "Visualizar última corrida",
             "changeToGlobal": "Visualizar ranking global",
-            "nextPage": "Próxima página",
-            "previousPage": "Página anterior"
+            "press": "Pressione",
+            "autoCloseIn": "Fechando em"
         },
         "webhook": {
             "imgLink": "https://i.imgur.com/lu39tQe.gif",
@@ -5138,8 +5138,8 @@
             "closeMessage": "to close this message!",
             "changeToSummary": "View last race",
             "changeToGlobal": "View global ranking",
-            "nextPage": "Next page",
-            "previousPage": "Previous page"
+            "press": "Press",
+            "autoCloseIn": "Close in"
         },
         "webhook": {
             "imgLink": "https://i.imgur.com/lu39tQe.gif",
@@ -5160,3 +5160,4 @@
         }
     }
 }
+                 
